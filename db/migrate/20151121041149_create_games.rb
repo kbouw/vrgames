@@ -1,0 +1,13 @@
+class CreateGames < ActiveRecord::Migration
+  def change
+    create_table :games do |t|
+      t.string :title
+      t.text :genre
+      t.text :platform
+      t.text :headset
+      t.text :description
+
+      t.timestamps null: false
+    end
+  end
+end

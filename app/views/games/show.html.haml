@@ -1,0 +1,19 @@
+%p#notice= notice
+%p
+  %strong Title:
+  = @game.title
+%p
+  %strong Genre:
+  = @game.genre
+%p
+  %strong Platform:
+  = @game.platform
+%p
+  %strong Headset:
+  = @game.headset
+%p
+  %strong Description:
+  = @game.description
+= link_to 'Edit', edit_game_path(@game)
+|
+\#{link_to 'Back', games_path}
